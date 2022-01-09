@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+        border-collapse: collapse;
+        border: 1 px solid #000;
+        padding: 0.5em;
+
+        }
+        th, td{
+        border-collapse: collapse;
+        border: 1px solid #000;
+        padding: 0.5em;
+
+        }
+        th{
+background: #333;
+color: antiquewhite;
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <!--
+        <table></table> Para marcar la tabla
+        <tr></tr> table row
+        <td></td> table data (para cada )
+        <th></th> table header
+        <tbody>/<tbody>
+            <thead></thead>
+
+            Agrupacion de filas y columnas
+            colspan
+            rowspan
+
+    -->
+
+    <table>
+        <caption>Horario semanal</caption>
+        <thead>
+            <th> Lunes</th>
+            <th> Martes</th>
+            <th> Miercos</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+
+        </thead>
+
+        <tbody>
+            <td colspan="2"> Comida</td>
+        
+            <td> Estudiar</td>
+            <td>Jugfaar</td>
+            <td>VEr peliculas </td>
+
+        </tbody>
+
+        <tfoot>
+            <td>1 </td>
+            <td>1 </td>
+            <td>1 </td>
+            <td>1 </td>
+            <td>1 </td>
+
+        </tfoot>
+
+<colgroup >
+<col>
+<col>
+<col style="background: aqua;">
+<col>
+<col>
+</colgroup>
+    </table>
+
+</body>
+
+</html>

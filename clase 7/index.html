@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 7 Formularios</title>
+</head>
+
+<body>
+    <!--    Estructura basica de un formulario HTML
+
+
+    -->
+    <h1>Sugerencias</h1>
+    <form action="form.html">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div style="margin-bottom: 10px;">
+                <label for="username"> Tu nombre</label> <br>
+                <input placeholder="Tu nombre" name="username" id="username">
+            </div>
+
+            <div style="margin-bottom: 10px;">
+                <label for="email">Correo</label><br>
+                <input placeholder="Correo" name="email" id="email">
+            </div>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Tu querido mensaje</legend>
+            <div>
+
+                <label for="comentario">Tu comentario</label><br>
+                <textarea name="messaje" cols="30" rows="10" placeholder="Comentarios" id="comentario"></textarea>
+
+            </div>
+            <fieldset>
+                <legend>Tipo de Input</legend>
+
+                <div>
+                    <label for=""> number
+                        <input type="number" value="0">
+                    </label><br>
+
+                    <label for=""> Date
+                        <input type="date">
+                    </label><br>
+
+                    <label for=""> Datetime local
+                        <input type="datetime-local">
+                    </label><br>
+
+                    <label for=""> Email
+                        <input type="email">
+                    </label><br>
+
+                    <label for=""> telefono
+                        <input type="tel">
+                    </label><br>
+
+                    <label for=""> Color
+                        <input type="color">
+                    </label><br>
+
+                    <label for=""> ps
+                        <input type="password">
+                    </label> <br>
+
+                    <label for=""> range
+                        <input type="range" min="0" max="10">
+                    </label> <br>
+
+
+                </div>
+
+
+                <fieldset>
+                    <legend> Seleciones Opciones</legend>
+
+
+                    <label for=""> Check box
+                        <input type="checkbox">
+                    </label> <br>
+                    <label for=""> 0
+                        <input type="checkbox">
+                    </label> <br>
+                    <label for=""> 1
+                        <input type="checkbox">
+                    </label> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Seleciones Opciones</legend>
+                    <label for=""> Radio
+                        <input type="radio" name="0">
+                    </label> <br>
+
+                    <label for=""> FM
+                        <input type="radio" name="0">
+                    </label> <br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> Seleciones Opciones</legend>
+                    <select name="country" id="">
+                        <optgroup label="Sur">
+                            <option value="peru">Peru</option>
+                        </optgroup>
+                        <optgroup label="central">
+                            <option value="CR">CR</option>
+                            <option value="Nic">Nic</option>
+                        </optgroup>
+
+                    </select>
+
+
+
+                </fieldset>
+                <fieldset>
+                    <input type="list" list="country-list" >
+                    <datalist id="country-list">
+                       <option value="peru"></option>
+                       <option value="cr"></option>
+                       <option value="colombia"></option>
+                       <option value="argentina"></option>
+                       <option value="brasil"></option>
+                    </datalist>
+                </fieldset>
+
+                <!-- <button>Enviar</button> -->
+            </fieldset>
+            <input type="submit" value="Enviar">
+
+
+                <!-- Atributo en los formularios
+                    placeholder
+                    type
+                    requiered
+                    readonly
+                    autocomplete= "on/off" de etiqueta form
+                    checked (para radio y checkbox)
+                    selected
+
+
+            -->
+    </form>
+
+</body>
+
+</html>
