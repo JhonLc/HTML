@@ -1,0 +1,22 @@
+/* Esto es para comentar*/
+/* Variables CSS (Custom properties) */
+
+:root {
+--color: rgb(245, 245, 245);
+
+}
+h1 {
+
+    color: var(--color);
+    background: rgb(11, 184, 175);
+    width: 200;
+    margin: 2em;
+
+}
+
+p {
+margin: 2em;
+    color: var(--color);
+    background: rgb(11, 184, 175);
+    width: 200;
+}

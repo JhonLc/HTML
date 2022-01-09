@@ -1,0 +1,67 @@
+/*
+1. Expecificidad
+2. Cascada
+3. Herencia
+
+Estos conceptos nos ayudan a entender como funciona CSS, 
+como resuelve los conflictos y como se define las arquitecturas CSS.
+* SMACSS
+* OOCSS
+* ITCSS
+*/
+
+/*
+    1. Expecificidad
+    General
+-----------------
+ ---------------
+  -------------
+   -----------
+    ---------
+     -------
+      -----
+       ---
+        -
+
+Especifico
+
+Etiquetas y Pseudoelementos:     1
+Clase, atributo y pseudo clases: 10
+id:                              100
+Estilos en linea:                1000
+*/
+
+h1{
+color: blueviolet;
+/* 1 */
+}
+.title{
+
+    color: burlywood;
+    /* 10 */
+}
+#title{
+    color: rgb(37, 125, 226);
+    /* 100 */
+}
+
+h1.title{
+    color: rgb(148, 231, 13);
+    /* 11 */
+    }
+
+    h1#title{
+        color: rgb(94, 110, 69);
+        /* 101 */
+        }
+
+        h1#title.title{
+            color: rgb(114, 11, 11);
+            /* 111 */
+            }
+
+            
+        body > h1#title.title{
+            color: rgb(11, 13, 114);
+            /* 112 */
+            }

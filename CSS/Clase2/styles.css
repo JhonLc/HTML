@@ -1,0 +1,170 @@
+/* Esto es para comentar*/
+/* Variables CSS (Custom properties) */
+
+/* Selectores
+
+selector {
+    propiedad1: valor1;
+    propiedad2: valor2;
+    propiedad3: valor3;
+
+}
+
+1.  selectores simples (una palabra)
+    h1 {}
+2.  selectores compuestos (mas de una palabra)
+    h1 span {}
+
+3.  selectores con operadores
+    h1 + span {}
+4.  Pseudoclases
+*/
+
+
+/*Selectores simples: etiquetas, tipos o elementos
+*/
+
+h1{
+color: blueviolet;
+margin: auto;
+}
+p{
+    color: rgb(46, 187, 121);
+}
+
+/*Selectores simples: clases
+Se infica con un punto y el nombre de la clase
+* No puede comernzar con numero
+* Pueden tener :
+* Pueden ser de una letra
+*/
+
+.title{
+    color: rgb(128, 0, 32);
+}
+
+.gray {
+
+color: gray;
+}
+
+
+.orange {
+
+    color: orange;
+    }
+
+    .button {
+        display: inline-block;
+        padding: .75em 2em;
+        background: steelblue;
+        color: whitesmoke;
+        border-radius: .25em;
+
+    }
+
+    /* Selector de id: simple 
+    
+    */
+    #title {
+
+        background: pink;
+    }
+
+   /* Selector compuestos: agrupados 
+    
+    */
+
+    h1, p, .button {
+        color: red;
+    }
+
+      /* Selector compuestos: combinados 
+    
+    */
+
+    h1.title {
+
+        color: navy;
+    }
+
+          /* Selector compuestos: descendientes 
+    
+    */
+
+    body span {
+color: blueviolet;
+
+    }
+
+              /* Selector peradores: * > + ~
+
+    
+    */
+/*
+    * {
+
+        color: rgb(255, 255, 255);
+        background: chartreuse;
+    }
+    */
+    p > span {
+
+        color: blue;
+        background: blue;
+    } 
+
+    p+div { /*Todo div que este despues de una p*/
+
+        border: 1px solid;
+    }
+    p ~ div { /*Todo div que este despues de una p hermanos siguientes*/
+
+       background: blue;
+    }
+
+    
+              /* Selector de atributo: 
+    
+             Usan []
+             [tributo= "value"]
+             [atributo]
+             
+    */
+    /* [type="text"]{
+        border: 1px solid red;
+    }
+    [type="number"]{
+        border: 1px solid rgb(15, 175, 141);
+    } */
+    [required]{
+        border: 2px dotted red;
+    }
+    [type="submit"]{
+        background: steelblue;
+        border: none;
+        color: tomato;
+    }
+    /* Comienza con [attr^="value"]*/
+
+    [type^="sub"]{
+        background: green;
+    }
+    
+    a[href^="http://"]{
+    border-bottom: 1px red dashed;
+    color: red;
+
+    }
+
+     /* termina con [attr$="value"]*/
+     a[href$=".mp4"]{
+        background: red;
+
+     }
+
+       /*  contiene [attr*="value"]*/
+       a[href*="team"]{
+           color: white;
+           background: turquoise;
+       }
