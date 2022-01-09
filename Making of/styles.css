@@ -1,0 +1,49 @@
+/* Escritura tipo maquina */
+.machine{
+display: block;
+font-family: monospace;
+white-space: nowrap;
+border-right: 4px solid;
+width: 10ch;
+animation: typing 3s steps(10),
+blink .5s infinite step-end alternate-reverse;
+overflow: hidden;
+
+/* border-color: ;
+color: ;
+background:; */
+}
+
+@keyframes typing{
+    from{ width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;}
+}
+/* Corazon */
+.heart{
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background: #d16ba5;
+    border-radius: 200px 200px 0 0;
+    transform: rotate(45deg);
+
+}
+.heart::before{
+content: "";
+position: absolute;
+background: #d16ba5;
+height: 160px;
+width: 100px;
+transform: rotate(-90deg);
+border-radius: 200px 200px 0 0;
+left: -30px;
+top: 30px;
+}
+.cool{
+background-image: linear-gradient(#d16ba5, #9a9ae1, rgb(211, 211, 211));
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
