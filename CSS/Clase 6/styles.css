@@ -1,0 +1,168 @@
+/* Pseudoclases
+
+Permite selecionar elementos segun su estado o alguna condicion
+Se indica con dos puntos (:)*/
+
+/* h1:hover {
+    background: yellowgreen;
+}
+
+h1 :hover{
+    background: rgb(28, 24, 61);
+}
+
+:hover{
+    background: rgb(28, 24, 61);
+} */
+
+:root {/* Elemento HMTL */
+--background: pink;
+}
+
+h1{
+    background: var(--background);
+}
+
+/* pseudoclases
+    *:hover mause encima del contenido
+    *:active 
+    *:visited
+*/
+
+.box{
+    background:
+     yellow;
+     width: 400px;
+     height: 250px;
+     transition: all .3s;
+}
+.box p {
+    display: none;
+}
+.box:hover p {
+    display: block;
+}
+.box:hover{
+    background: violet;
+    width: 300px;
+    height: 200px;
+}
+
+a:visited {
+    color: grey;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: green;
+}
+/* :target :not :empty
+
+*/
+p:target{
+    color: crimson;
+}
+
+.secreto{
+    display: none;
+}
+.secreto:target{
+    display: block;
+}
+/* p{
+    color: crimson;
+} */
+p:not(.p2){
+    color: red
+}
+div{
+    background:
+     darkgoldenrod;
+     padding: 1em;
+     width: 150px;
+}
+p{
+   margin: 0;
+}
+p:not(:last-child){
+    margin-bottom: 1em;
+}
+
+div:not(:empty){
+    background: yellow;
+    padding: 1em;
+    width: 200px;
+
+}
+div:empty{
+   padding: 0em;
+}
+/* li:last-child{
+    background: yellow;
+} */
+
+/* :first-child :last-child*/
+p:first-of-type{
+    color:blue;
+}
+/* :first-of-type :last-of-type */
+
+/* :nth-chinld() :nth-last-child()
+ :nth-child(even) :nth-last-child(odd) par o inpar
+ :nth-child(x) nth:nth-last-child(x)
+ :nth-child(xn) nth:nth-last-child(xn)
+ :nth-child(Xn+-Y) nth:nth-last-child(Xn+-Y)
+*/
+
+ /* p:nth-child(3n-1){
+     background: chartreuse;
+ } */
+
+ /* Trucos CSS 
+ 
+    Encontrar los primeros X elementos
+
+ p:nth-child(-n+5){ 
+     background: chartreuse;
+     display: block;
+ }
+
+    Encontrar los ultimos X elementos
+
+     p:nth-last-child(-n+5){ 
+     background: chartreuse;
+     display: block;
+ }
+ */
+ p:nth-child(n+5){ 
+    /* background: chartreuse; */
+    display: block;
+}
+
+ p{
+    display: none;
+}
+
+ /* p:nth-child(-n+5){ 
+     background: chartreuse;
+     display: block;
+ } */
+ /* para tomar los primeros X 
+ el cual lo selecciona uno, en el de arriba fue 5 */
+
+ /* Seleccionar todos los elementos pares a partir del 5top
+  */
+  /* p:nth-child(n+5):nth-child(even){ */
+      /* background: rgb(36, 36, 25); */
+  }
+
+  /* :nth-of-type() :nth-last-of-type() */
+
+  .p:nth-child(3){
+      background: turquoise;
+  }
+
+  .p:nth-of-type(3){
+    background: turquoise;
+}

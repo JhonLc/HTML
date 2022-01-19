@@ -1,0 +1,148 @@
+/* Frente y fondo
+
+*/
+
+/* body{
+    background-color: aquamarine;
+    color: blue;
+}
+
+h1{
+    border: 1px solid;
+    box-shadow: 5px 5px 5px currentColor;
+} */
+/* currentColor es una variable para 
+mantener el color predeterminado seguin el body */
+
+/* color keywords*/
+
+/* Modo de color RGB 
+    Existen dos modos de colores basicos
+        aditivo (la suma da blanco)
+            RGB(red, green, blue)
+
+        Sustrativo(la suma da negro)
+        CMYK (cyan, magenta, yellow, black)
+
+        En el modo RGB tenemos 8 bts de colo,
+        significa que cada canal tiene 256 variaciones posibles, 
+        comienza con el 0 y termina en 255.
+
+        R(255) G(255) B(255) ~ 16.5 millones de combinaciones 
+
+        rgb (0-255, 0-255, 0-255)
+
+
+*/
+
+/* body{
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+} */
+/* notacion exadecimal 
+
+*/
+
+/* Modo de color HSL
+    Hue (tono, de 0 a 360)
+    Circulo cromatico
+    0 rojo
+    60 amarillo 
+    120 verde
+    180 cyan
+    240azul
+    300 magenta
+    360 rojo
+
+    Saturation(intenciada dl color. de 0 a 100%)
+    Light(luez, de 0, negro, al 100% blanco)
+*/
+
+/* body{
+    background-color: hsl(0, 100%, 50%);
+} */
+/* DEgradados lineales
+background-image: linear-gradient(Color1, color2, color3)
+background-image: linear-gradient(Color1[stop], color2[stop], color3[stop])
+background-image: linear-gradient(Color1[stop], color2[stop], color3[stop])
+*/
+/* html, body{
+    height: 100%;
+} */
+/* body{
+    background-image: linear-gradient(120deg,rgba(238, 254, 113,0.9) 20%,rgba(0,0,80,0.8) 80%);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+} */
+
+
+/* DEgradados radiales
+
+ background-image: radial-gradient(Color1, color2, color3);
+    background-image: radial-gradient(Color1[stop], color2[stop], color3[stop]);
+    background-image: radial-gradient([at x y], color1 [stop], color2 [stop]);
+    background-image: radial-gradient([size shape] [at x y], color1 [stop], color2 [stop]);
+    palabras claves para indicar el tamanio
+
+        *closest-side
+        *farthest-side
+        *closest-corner
+        *fasrthest-corner
+
+*/
+
+/* body{ 
+    background-image: radial-gradient(rgba(238, 254, 113,0.9) 10%,rgba(0,0,80,0.8) 60%);
+
+} */
+
+   
+.box{
+    width: 400px;
+    height: 200px;
+    border: 2px solid  black;
+    margin: 50px auto;
+    /* border-radius: 50%; */
+}
+
+/* .box{
+
+    background-image: radial-gradient(farthest-corner at 0 0, yellow, green);
+
+
+} */
+
+/* degradados repetidos */
+
+.box{
+/* background-image: radial-gradient(yellow, red); */
+background-image: repeating-radial-gradient(white 0, white 5%, black 5%, black 10%);
+
+background-image: repeating-linear-gradient(white 0, white 20px, black 20px, black 21px);
+}
+
+.ying-yang{
+    --size: 200px;
+    --size2: calc(var(--size)/2);
+
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 50px auto;
+
+    background-image: 
+    radial-gradient(var(--size2) circle at 50% 75%,white 10% , transparent 10%),
+    radial-gradient(var(--size2) circle at 50% 25%,black 10% , transparent 10%),
+    radial-gradient(var(--size2) circle at 50% 25%,white 50% , transparent 50%),
+    radial-gradient(var(--size2) circle at 50% 75%,black 50% , transparent 50%),
+    linear-gradient(to right, white 50%, black 50%);
+    animation: ying-yangs 0s linear infinite;
+}
+
+@keyframes ying-yangs {
+    to {transform: rotate(360deg);}
+}

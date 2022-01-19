@@ -1,0 +1,128 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+
+}
+:root{
+    --width: 400px;
+    --height:250px;
+    --bg:yellow;
+}
+.box{
+width: var(--width);
+height: var(--height);
+background: var(--bg);
+/* border: 1px solid black; */
+/* shorthand 
+border-width
+border-style
+border-color
+*/
+
+/* border-width: 2px 4px 8px 16px;
+border-style: solid dashed dotted double;
+border-color: black gray green pink; */
+
+border-top-width: 3px;
+border-top-style: dashed;
+border-top-color: blue;
+
+/* Se resume con un border-top */
+
+border-right-width: 3px;
+border-right-style: dashed;
+border-right-color: blue;
+
+/* Se resume con un border-right */
+
+border-bottom-width: 3px;
+border-bottom-style: solid;
+border-bottom-color: gray;
+
+/* Se resume con un border-bottom */
+
+border-left-width: 3px;
+border-left-style: dotted;
+border-left-color: gray;
+
+/* Se resume con un border-left */
+}
+
+h1{
+    border-bottom: solid black;
+    display: inline-block;
+    padding: 10px;
+}
+/* border radius */
+
+.box2{
+    width: var(--width) ;
+    height: var(--height);
+   background: red;
+   /* border: 1px solid; */
+   /* border-radius: 60%;
+   border-top-left-radius: 5px ;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 20px; */
+
+   /* border-radius: x y */
+   /* border-top-left-radius: 100px 250px;
+   border-top-right-radius: 75px 175px;
+   border-bottom-left-radius: 200px 120px;
+   border-bottom-right-radius: 80px 120px ; */
+   /* border-radius: 100px 75px 200px 80px / 250px 175px 120px 120px */
+   border-radius: 70px / 110px;
+   padding: 0.1px; 
+}
+/* border radius: x x x x / y y y y; */
+
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+.plate{
+    width: 150px;
+    height: 150px;
+    /* background: rgb(212, 102, 102); */
+    margin: 50px auto;
+   border: 75px solid;
+   border-color: transparent;
+   border-left-color: white;
+   margin-right: 70px;
+   transform: scaley(60%);
+}
+
+/* Propiedad outline */
+.box4{
+    width: var(--width) ;
+    height: var(--height);
+   background: yellowgreen;
+   border: 10px solid black;
+   outline: 10px solid red;
+}
+
+/* Propiedad box-shadow
+    box-shadow: h-offset v-offset blur spread  color inset;
+*/
+.circle{
+    width: 200px;
+    height: 200px;
+    background: rgb(124, 50, 50);
+    margin: 100px auto;
+    border-radius: 50%;
+    box-shadow: -10px -30px 10px 0px rgba(0,0, 0, 0.5) inset,
+                10px 30px 25px 0px rgba(255, 255, 255, 0.5) inset,
+                -15px -40px 40px 0px rgba(255, 251, 212, 0.575);
+    /* box-shadow:
+     40px 0px 0px 0px red, 80px 0px blue, 120px 0px gray,
+     20px 20px, 60px 20px, 100px 20px,
+     120px 40px,80px 40px,40px 40px,
+     0px 40px; */
+
+}
+body{
+    background: #222;
+}

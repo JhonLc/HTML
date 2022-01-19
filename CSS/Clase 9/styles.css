@@ -1,0 +1,41 @@
+/* Unidades de medida: em y rem 
+1rem = 16px (mientras que no se cambie el font-size de root)
+1em = 100%
+*/
+
+p{
+    /* font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+    padding: .5em;
+    line-height: 1.6; */
+    /* text-decoration: ;
+    text-transform: capitalize; */
+    /* letter-spacing: .05em; */
+    /* word-spacing: 1em; */
+
+    
+}
+
+/* font-family
+
+*/
+
+h1{
+font-size: 2rem;
+text-align: center;
+font-weight: 700;
+padding: .5em;
+}
+p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding: .5em;
+    line-height: 1.5;
+    color: hsl(199, 49%, 88%);
+    background: hsl(200, 60%, 20%); 
+    text-shadow: 1px 1px 2px #000;
+
+}
