@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+.banner{
+    display: flex;
+    background-color: yellowgreen;
+    height: 300px;
+}
+
+.banner__item{
+flex: 1;
+color: aliceblue;
+font-weight: bold;
+font-size: 1.2em;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: flex-grow 0.3s;
+
+}
+.banner__item:hover{
+    flex-grow: 2;
+}
+.banner__item:hover .banner__title{
+    transform: rotate(0);
+    font-size: 2.5em;
+}
+.banner__item:nth-child(1){
+background-color: hsl(90, 100%, 40%);
+}
+
+.banner__item:nth-child(2){
+    background-color: hsl(30, 100%, 40%);
+}
+
+.banner__item:nth-child(3){
+    background-color: hsl(180, 80%, 40%);
+}
+
+
+.banner__item:nth-child(4){
+    background-color: hsl(200, 70%, 40%);
+
+}
+
+.banner__title{
+margin: 0;
+transform: rotate(-90deg);
+transition: transform 0.3s 0.3s;
+transition: font-size 0.3s 0.3s;
+}
